@@ -44,6 +44,18 @@ how many moons does earth have?||1 moon
 when is a planet said to be aphelion?||When it is farthest from the Sun
 when could you see bailey's beads?||During a total solar eclipse
 when will hailey's comet next appear?||In the year 2061
+which country has the highest population?||China has the highest population with approximately 1.398 people
+how many continents are there?||There are seven continents. They are Africa, Asia, Europe, South America, North America, Australia and Antractica
+what is the tallest mountain on Earth?||Mt.Everest, which stands at 8,849 kilometers
+how many ocean basins are there?||There are five ocean basins: Pacific Ocean, Arctic Ocean, Indian Ocean, Antractic Ocean and Atlantic Ocean
+what is the smallest country?||The Vatican City is the smallest country. It measures 0.49 square kilometers
+what is the largest country?||Russia is the largest country. It measures 17,098,242 square kilometers
+what is the largest continent?||Asia
+what is the longest river?||The Nile is the longest river. It measures 6650 kilometers
+what is the largest volcano?||Maona Lau is the largest volcano. It is located in Hawaii
+what is the most populated city?||Tokyo is the most populated city. It has a population of over 37 million people
+what is the largest country in the Caribbean?||Cuba. It has the land area of around 111,000 square kilometers
+where is the northernmost point of land in the world?||Greenland
 hey||Hey! Glad to see you
 hi||Hi there!
 hello||Hello! I am Nova.
@@ -51,3 +63,4 @@ how are you today?||I couldn't be better!
 what is your job?||I teach you about astronomy!
 how do you work?||If you ask a question about astronomy, I will try to answer it.
 nice to meet you too||Do you have astronomy questions for me?
+
