@@ -1,0 +1,53 @@
+how fast does the earth spin?||It spins approximately 1600 km/hr
+how many planets are in our solar system?||There are 8 planets in our solar system
+what is the largest planet in our solar system?||Jupyter
+what is the smallest planet in our solar system?||Pluto
+what is an astronomical unit?||It is the average distance from the center of the Sun to the center of the Earth. It is about 149.6 million kilometers
+how old is the universe?||We believe the universe is about 13.8 billion years old
+what are the types of galaxies?||There are elliptical, spiral and irregular galaxies
+how old is the earth?||The Earth is about 4.54 billion years old
+what are the types of star clusters?||There are open clusters and globular clusters. Open clusters are modestly-sized and globular clusters are densely packed.
+what is the categorization of our sun?||Our Sun is a G-type main sequence star. G2V to be specific.
+what is a light year?||A light year describes the distance that light travels in one year
+what is a parsec?||It is the distance at which the mean radius of the earth's orbit subtends an angle of one second of arc.
+when will our Sun die?||Our Sun will die in approximately 4.5 billion years and turn into a white dwarf
+what kind of galaxy is the milky way?||The Milky Way is a spiral galaxy
+how long does it take for light to travel from the Sun to the Earth?||Light takes about 8.3 minutes to travel from the Sun to the Earth
+what is the diameter of the milky way?||The Milky Way has a diameter of approximately 100,000 light years
+how many planets are in our solar system?||There are 8 planets in our solar system (And one dwarf planet, Pluto)
+which planet is closest to the Sun?||Mercury
+what is a black hole?||A black hole is a region in spacetime where gravity is so strong that not even light can escape
+how long does it take Earth to rotate around the Sun?||It takes Earth about 365 days to rotate around the Sun
+how long does it take Earth to rotate on its axis?||It takes Earth about 24 hours for Earth to rotate on its axis
+what are stars made of?||Stars are mostly made of hydrogen and helium
+how does the Sun produce heat?||The Sun produces heat through Nuclear Fusion
+what is nuclear fusion?||It is a processes by which the Sun fuses hydrogen atoms to form helium
+what is the closest star to Earth?||Other than the Sun, Alpha Centauri is the closest star to the Earth
+what is a white dwarf?||It is the collapsed remnant core of a low-mass star that has ejected its outer layers and can no longer sustain nuclear fusion
+what is the hottest planet in our solar system?||Venus is the hottest planet. Its average temperature is about 471 degrees celsius
+what is the coldest planet in our solar system?||Pluto is the coldest planet. Its average temperature is about -233 degrees celsius
+what is a neutron star?||It is the compact corpse of a high-mass star. It packs about the mass of the Sun into the volume just a few kilometers in radius
+what is a moon?||A moon is an object that orbits a planet
+what is a nebula?||A cloud of gas in space
+what is a leap year?||It is a year that has 366 days instead of 365. It occurs every 4 years.
+what is gravity?||It is one of the four fundamental forces
+what is a gamma-ray burst?||It is a sudden burst of gamma rays from deep space. They are thought to come from distant galaxies
+what are the layers of the Sun?||The sun is comprised of its core, radiative zone, convection zone, photosphere,chromosphere and corona
+what is dark matter?||It is matter that we infer exist from its gravitational effects but from which we have not detected any light
+what is the big bang?||It is the name given to the event thought to mark the birth of the universe
+why does the moon shine?||The moon shines because it reflects the light from the Sun
+can we move faster than light?||We cannot travel faster than light according to Einstein's special theory of relativity
+how much brighter is a first magnitude star to a second magnitude star?||About 2.5 times brighter
+how many people have stepped on the moon?||Only 12 people
+what is the nearest galaxy to the milky way?||Andromeda. It is about 2 million light years away from Earth
+how many moons does earth have?||1 moon
+when is a planet said to be aphelion?||When it is farthest from the Sun
+when could you see bailey's beads?||During a total solar eclipse
+when will hailey's comet next appear?||In the year 2061
+hey||Hey! Glad to see you
+hi||Hi there!
+hello||Hello! I am Nova.
+how are you today?||I couldn't be better!
+what is your job?||I teach you about astronomy!
+how do you work?||If you ask a question about astronomy, I will try to answer it.
+nice to meet you too||Do you have astronomy questions for me?
