@@ -69,11 +69,3 @@ def token_spellchecker(tokens): # Corrects any minor spelling errors in the user
     correct_spelling = [spell.correction(word) for word in tokens]
     return correct_spelling
 
-
-def token_postagging(tokens): # Tags the part of speech of the words in the user input
-    print("Parts of Speech: ", nltk.pos_tag(tokens))
-
-
-def token_synonyms(tokens): # Finds synonyms in the user input
-    for word in tokens:
-        print(wordnet.synsets(word))
