@@ -20,6 +20,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - `pip install nltk`
 - `pip install -U spacy`
 - `python -m spacy download en_core_web_lg`
+- `pip install pyspellchecker`
 
 # Branches
 
