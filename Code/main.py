@@ -1,6 +1,8 @@
 import Preprocessor
 import Processor
 import sys, os
+import nltk
+from nltk.corpus import wordnet
 
 
 def blockPrint():  # Remove all the printing onto console when chatbot is loading
@@ -18,11 +20,16 @@ blockPrint()
 question_list = Processor.vectorizer(questions)
 enablePrint()
 print("The Chat Bot has loaded. Type 'goodbye' to exit")
-print("Hello. My name is Nova, the astronomy and geography Chat Bot. Pleased to meet you")
+print("Hello. My name is Nova, the astronomy Chat Bot. Pleased to meet you")
+
+bye_synonyms = []
+for syn in wordnet.synsets("bye"):
+    for l in syn.lemmas():
+        bye_synonyms.append(l.name())
 
 while True:  # The Chat Bot will run until 'goodbye' is inputted
     user_input = input("Input: ").lower()
-    if user_input.lower() == "goodbye":
+    if user_input.lower() in bye_synonyms:
         print("Nova: See you soon!")
         quit()
     else:
