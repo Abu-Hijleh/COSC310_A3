@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b15ecba-f0ee-4892-b19f-5ea7b2de733a" name="Default Changelist" comment="Edited GUI to make it look good">
-      <change beforePath="$PROJECT_DIR$/Code/Preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Preprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/norm_punc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/norm_punc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

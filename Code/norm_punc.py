@@ -1,5 +1,14 @@
-#!/usr/bin/env python3
+#We took this code from:
+# https://github.com/derlin/swisstext/blob/master/docs/getting-started/installation.rst
+# https://derlin.github.io/swisstext/html/_modules/swisstext/cmd/scraping/tools/norm_punc.html
+#We are citing the code here.
+#We made sure that the code was liscensed under creative commons and that we are free to use it with attribution and no commercial motive.
 
+#to quote the github read me
+# "SwissText Crawler (c) by Lucy Linder
+#The SwissText Crawler is licensed under a Creative Commons Attribution-NonCommercial 4.0 Unported License."
+
+#!/usr/bin/env python3
 #
 # A python script that mimics what Moses remove-non-printing-char.perl
 # and normalize-punctuation.perl do, with some slight improvements:

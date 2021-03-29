@@ -27,7 +27,7 @@ print("Booting Up...")
 blockPrint()
 question_list = Processor.vectorizer(questions)
 enablePrint()
-print("The Chat Bot has loaded. Type 'goodbye' to exit")
+print("The Chat Bot has loaded.")
 
 window = tkinter.Tk()
 #height is false so that we do not lose the fixed bar at the bottom
