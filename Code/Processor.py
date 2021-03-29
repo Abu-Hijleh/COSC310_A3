@@ -4,6 +4,7 @@ import en_core_web_lg
 #Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be. 
 
 def preprocess(sentence):  # Uses functions in Preprocessor.py to format sentence
+    correctspelling_sentence = Preprocessor.sentence_spellchecker(sentence) #corrects spelling
     formatted_sentence = Preprocessor.sentence_formatter(sentence)  # remove punctuation
     lemmatized_sentence = Preprocessor.sentence_lemmatizer(formatted_sentence)  # lemmatize words
     cleaned_sentence = Preprocessor.sentence_cleaner(lemmatized_sentence)  # remove stopwords
