@@ -268,6 +268,6 @@ hey||Hey! Glad to see you
 hi||Hi there!
 hello||Hello! I am Nova.
 how are you today?||I couldn't be better!
-what is your job?||I teach you about astronomy!
-how do you work?||If you ask a question about astronomy, I will try to answer it.
-nice to meet you too||Do you have astronomy questions for me?
+what is your job?||I teach you about astronomy and geography!
+how do you work?||If you ask a question about astronomy or geography, I will try to answer it.
+nice to meet you too||Do you have astronomy or geography questions for me?

@@ -1,6 +1,6 @@
 import string
 from spellchecker import SpellChecker
-import norm_punc
+import norm_punc #this imports from our norm_punc file
 import nltk
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet
@@ -25,7 +25,7 @@ def load_corpus():  # Loads questions and responses from corpus.txt
             responses.append(split[1])
     return questions, responses
 
-
+#our application of phrasal, we used the normalizer function from phrasal.
 def sentence_normalizer(sentence):
     standard_char_list = "abcdefghijklmnopqrstuvwsyz- "
     temp_sentence = ""
@@ -61,7 +61,7 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     cleaned_sentence = ' '.join(cleaned_tokens)  # rejoin words into sentence format
     return cleaned_sentence
 
-
+#spell checking application to correct minor errors
 def token_spellchecker(tokens):
     spell = SpellChecker()
     correct_spelling = [spell.correction(word) for word in tokens]

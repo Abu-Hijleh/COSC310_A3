@@ -23,7 +23,7 @@ for syn in wordnet.synsets("bye"):
         bye_synonyms.append(l.name())
 
 
-print("Booting Up...")
+print("Booting Up... (this may take a while!)")
 blockPrint()
 question_list = Processor.vectorizer(questions)
 enablePrint()
