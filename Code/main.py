@@ -1,40 +1,55 @@
+#We have 3 python files. In this file, main.py, we run the actual code and also the GUI. Functionality is imported from the other 2 files.
 import Preprocessor
 import Processor
+import tkinter
 from tkinter import *
-root = Tk()
-root.title("Nova")
-root.resizable(width=FALSE,height=FALSE)
-root.geometry("400x500")
-messages = Text(root, bd=1, bg="#008080",width="50",height="8",font=("Arial",16),foreground="#000000")
-messages.place(x=0, y=0, height = 500, width = 500 )
-
-input = Text(root, bd=0, bg="white",width="30", height="4", font=("Arial", 16), foreground="#000000")
-input.place(x=100, y=400, height=80, width=300)
-
-scrollbar = Scrollbar(root, command=messages.yview, cursor="star")
-scrollbar.place(x=375,y=5, height=385)
-
-Button= Button(root, text="Send",  width="10", height=6,
-                    bd=0, bg="#7B0C0C", activebackground="#B7312A",foreground="black",font=("Arial", 12))
-Button.place(x=0, y=400, height=80)
-
-root.mainloop()
-#testing branching
-#We have 3 python files. In this file, main.py, we run the actual code. Functionality is imported from the other 2 files.
 
 questions, responses = Preprocessor.load_corpus()
-
+#for debugging on terminal
 print("Booting Up...")
 question_list = Processor.vectorizer(questions)
-print("The Chat Bot has loaded. Type 'goodbye' to exit")
-print("Hello. My name is Nova, the astronomy Chat Bot. Pleased to meet you")
+print("The Chat Bot has loaded.")
 
-#while loop to terminate conversation
-while True:  # The Chat Bot will run until 'goodbye' is inputted
-    user_input = input("Input: ").lower()
-    if user_input.lower() == "goodbye":
-        print("Nova: See you soon!")
-        quit()
-    else:
-        print("Nova:",end=' ')
-        Processor.process(user_input, question_list, responses) #calls function from Processor file.
+window = tkinter.Tk()
+#height is false so that we do not lose the fixed bar at the bottom
+window.resizable(width=True, height=False)
+window.title("Nova, the chatbot")
+scrollbar = Scrollbar(window)
+scrollbar.pack(side=RIGHT, fill=Y)
+Nova = StringVar()
+You = StringVar()
+messages = Text(window, width=100, height=20, yscrollcommand=scrollbar.set, wrap=WORD)
+messages.config(background="#008080")
+scrollbar.config(command=messages.yview())
+messages.pack(anchor='nw', expand=1, fill=BOTH)
+
+
+def event_enter(key):
+    Enter_pressed()
+
+
+def Enter_pressed():
+
+    input_get = You.get()
+    messages.insert(END, "You: " + '%s\n' % input_get)
+    #this gets the response from the Processor.py file and then prints them out
+    get_response = Processor.process(input_get, question_list, responses)
+    messages.insert(END, "Nova: " + '%s\n' % get_response)
+    You.set('')
+    messages.see(END)
+    return "break"
+
+Label(window, text=" user : ").pack(side=LEFT)
+Entry(window, textvariable=You, width=10, background="white").pack(side=LEFT, anchor='nw', expand=1, fill=BOTH)
+frame = Frame(window)
+Button(window, width=10, text="Send", foreground="Black", command=Enter_pressed, relief="flat").pack(side=LEFT)
+messages.insert(END, "Nova: " + '%s\n' % "Hello. My name is Nova, the astronomy Chat Bot. Pleased to meet you.")
+window.bind("<Return>", event_enter)
+frame.pack(anchor='nw', expand=1, fill=BOTH)
+window.mainloop()
+
+
+
+
+
+

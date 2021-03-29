@@ -35,7 +35,7 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
             similarity_index = similarity
             index = i
     if similarity_index > 0.60:
-        print(answer[index])
+        return(answer[index])
 
     else:
-        print("I do not understand your question")
+        return "I do not understand your question"
