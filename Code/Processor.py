@@ -2,7 +2,8 @@ import Preprocessor
 import en_core_web_lg
 import random
 
-#Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be.
+
+# Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be.
 
 
 def preprocess(sentence):  # Uses functions in Preprocessor.py to format sentence
@@ -24,7 +25,9 @@ def vectorizer(question):  # Turns questions into a vectorized list
 
 
 def process(sentence, doc_2, answer):  # Processes user input and outputs the correct response
-    invalid_responses = ["I do not understand the question", "That question is not in my database","I cannot answer that question","I am not familiar with that question","I am sorry. Could you please ask another question?"]
+    invalid_responses = ["I do not understand the question", "That question is not in my database", "I cannot answer "
+                                                                                                    "that question",
+                         "I am not familiar with that question", "I am sorry. Could you please ask another question?"]
     similarity_index = 0
     index = 0
     nlp = en_core_web_lg.load()
