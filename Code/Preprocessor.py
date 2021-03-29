@@ -1,8 +1,8 @@
-  
 import string
 from spellchecker import SpellChecker
 import nltk
 from nltk.corpus import stopwords
+from nltk.corpus import wordnet
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
@@ -46,6 +46,7 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     cleaned_tokens = [word for word in tokens if not word in stopwords.words()]  # Only add words that are not stopwords
     cleaned_tokens = token_spellchecker(cleaned_tokens)
     token_postagging(cleaned_tokens)
+    token_synonyms(cleaned_tokens)
     cleaned_sentence = ' '.join(cleaned_tokens)  # rejoin words into sentence format
     return cleaned_sentence
 
@@ -58,3 +59,8 @@ def token_spellchecker(tokens):
 
 def token_postagging(tokens):
     print("Parts of Speech: ", nltk.pos_tag(tokens))
+
+
+def token_synonyms(tokens):
+    for word in tokens:
+        print(wordnet.synsets(word))
