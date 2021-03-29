@@ -26,7 +26,7 @@ def load_corpus():  # Loads questions and responses from corpus.txt
     return questions, responses
 
 
-def sentence_normalizer(sentence):
+def sentence_normalizer(sentence): # Removes any special characters and emojis from the user input
     standard_char_list = "abcdefghijklmnopqrstuvwsyz- "
     temp_sentence = ""
     normalized_sentence = norm_punc.normalize_text(str(sentence.lower()),fix_encoding=True,strip_emojis=True)
@@ -64,16 +64,16 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     return cleaned_sentence
 
 
-def token_spellchecker(tokens):
+def token_spellchecker(tokens): # Corrects any minor spelling errors in the user input
     spell = SpellChecker()
     correct_spelling = [spell.correction(word) for word in tokens]
     return correct_spelling
 
 
-def token_postagging(tokens):
+def token_postagging(tokens): # Tags the part of speech of the words in the user input
     print("Parts of Speech: ", nltk.pos_tag(tokens))
 
 
-def token_synonyms(tokens):
+def token_synonyms(tokens): # Finds synonyms in the user input
     for word in tokens:
         print(wordnet.synsets(word))
