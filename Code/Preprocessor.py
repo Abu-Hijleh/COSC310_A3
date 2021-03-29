@@ -1,4 +1,5 @@
 import string
+import SpellChecker
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -41,3 +42,9 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     cleaned_tokens = [word for word in tokens if not word in stopwords.words()]  # Only add words that are not stopwords
     cleaned_sentence = ' '.join(cleaned_tokens)  # rejoin words into sentence format
     return cleaned_sentence
+
+def sentence_spellchecker(sentence):
+    spellchecker = SpellChecker()
+    correctspelling = [spellchecker.correction(word) for word in sentence]
+    correct_sentence = ' '.join(correctspelling)
+    return correct_sentence
