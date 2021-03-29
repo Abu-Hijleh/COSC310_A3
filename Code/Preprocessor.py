@@ -1,5 +1,6 @@
 import string
 from spellchecker import SpellChecker
+import norm_punc
 import nltk
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet
@@ -23,6 +24,18 @@ def load_corpus():  # Loads questions and responses from corpus.txt
             questions.append(split[0])
             responses.append(split[1])
     return questions, responses
+
+
+def sentence_normalizer(sentence):
+    standard_char_list = "abcdefghijklmnopqrstuvwsyz- "
+    temp_sentence = ""
+    normalized_sentence = norm_punc.normalize_text(str(sentence.lower()),fix_encoding=True,strip_emojis=True)
+    for char in normalized_sentence:
+        for standardChar in standard_char_list:
+            if standardChar == char:
+                temp_sentence += char
+                break
+    return temp_sentence
 
 
 def sentence_formatter(sentence):  # Removes punctuation from sentence
