@@ -8,7 +8,7 @@ questions, responses = Preprocessor.load_corpus()
 print("Booting Up...")
 question_list = Processor.vectorizer(questions)
 print("The Chat Bot has loaded. Type 'goodbye' to exit")
-print("Hello. My name is Nova, the astronomy Chat Bot. Pleased to meet you")
+print("Hello. My name is Nova, the astronomy and geography Chat Bot. Pleased to meet you")
 
 #while loop to terminate conversation
 while True:  # The Chat Bot will run until 'goodbye' is inputted
