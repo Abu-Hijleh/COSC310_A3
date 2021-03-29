@@ -1,8 +1,8 @@
 import Preprocessor
 import Processor
 import sys, os
-
-#We have 3 python files. In this file, main.py, we run the actual code. Functionality is imported from the other 2 files.
+import nltk
+from nltk.corpus import wordnet
 
 
 def blockPrint():  # Remove all the printing onto console when chatbot is loading
@@ -22,9 +22,14 @@ enablePrint()
 print("The Chat Bot has loaded. Type 'goodbye' to exit")
 print("Hello. My name is Nova, the astronomy Chat Bot. Pleased to meet you")
 
+bye_synonyms = []
+for syn in wordnet.synsets("bye"):
+    for l in syn.lemmas():
+        bye_synonyms.append(l.name())
+
 while True:  # The Chat Bot will run until 'goodbye' is inputted
     user_input = input("Input: ").lower()
-    if user_input.lower() == "goodbye":
+    if user_input.lower() in bye_synonyms:
         print("Nova: See you soon!")
         quit()
     else:
