@@ -44,7 +44,8 @@ how many moons does earth have?||1 moon
 when is a planet said to be aphelion?||When it is farthest from the Sun
 when could you see bailey's beads?||During a total solar eclipse
 when will hailey's comet next appear?||In the year 2061
-which country has the highest population?||China has the highest population with approximately 1.398 people
+which country has the highest population?||China has the highest population with approximately 1.398 billion people
+which country has the lowest population?||The Vatican City has the lowest population with approximately 825 people
 how many continents are there?||There are seven continents. They are Africa, Asia, Europe, South America, North America, Australia and Antractica
 what is the tallest mountain on Earth?||Mt.Everest, which stands at 8,849 kilometers
 how many ocean basins are there?||There are five ocean basins: Pacific Ocean, Arctic Ocean, Indian Ocean, Antractic Ocean and Atlantic Ocean
@@ -58,6 +59,11 @@ what is the largest country in the Caribbean?||Cuba. It has the land area of aro
 where is the northernmost point of land in the world?||Greenland
 what is the largest lake?||The Caspian Sea. It is 371,000 square kilometers
 how many states are in the usa?||50 states
+who was the first president of the usa?||George Washington
+which country exports the most?||China
+which country imports the most?||United States of America
+what is the largest state in the usa?||Alaska
+what is the largest desert?||The Antarctic Desert
 what is the capital of afghanistan||Kabul
 what is the capital of albania||Tirana (Tirane)
 what is the capital of algeria||Algiers
