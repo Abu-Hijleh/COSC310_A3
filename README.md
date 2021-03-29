@@ -43,14 +43,14 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
-- `Input: what s the capitall pf jamaica?`
-- `Nova: Kingston`
+  - `Input: what s the capitall pf jamaica?`
+  - `Nova: Kingston`
 - Nova can recognize the parts of speech of words in the user input
-- `Input: what is a white dwarf?`
-- `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
+  - `Input: what is a white dwarf?`
+  - `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
 - Nova can recognize synonyms of words in the user input
-- `Input: which country has the lowest population?`
-- `Nova: Synset('state.n.04'), Synset('country.n.02'), Synset('nation.n.02'), Synset('country.n.04'), Synset('area.n.01')][Synset('last.s.09'), Synset('low.a.01'), Synset('low.a.02'), Synset('low.s.03'), Synset('low.s.04'), Synset('low.a.05'), Synset('abject.s.01'), Synset('humble.s.01'), Synset('depleted.s.01'), Synset('broken.s.03'), Synset('gloomy.s.02'), Synset('lowest.r.01')][Synset('population.n.01'), Synset('population.n.02'), Synset('population.n.03'), Synset('population.n.04'), Synset('population.n.05')]`
+  - `Input: which country has the lowest population?`
+  - `Nova: Synset('state.n.04'), Synset('country.n.02'), Synset('nation.n.02'), Synset('country.n.04'), Synset('area.n.01')][Synset('last.s.09'), Synset('low.a.01'), Synset('low.a.02'), Synset('low.s.03'), Synset('low.s.04'), Synset('low.a.05'), Synset('abject.s.01'), Synset('humble.s.01'), Synset('depleted.s.01'), Synset('broken.s.03'), Synset('gloomy.s.02'), Synset('lowest.r.01')][Synset('population.n.01'), Synset('population.n.02'), Synset('population.n.03'), Synset('population.n.04'), Synset('population.n.05')]`
 
 # Limitations
 
