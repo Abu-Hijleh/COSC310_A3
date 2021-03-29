@@ -4,11 +4,14 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+
+nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
 
-#Preprocessor has functions to load the corpus questions and responses, as well as to format the user input so it can be used by the Processor file.
+
+# Preprocessor has functions to load the corpus questions and responses, as well as to format the user input so it can be used by the Processor file.
 
 def load_corpus():  # Loads questions and responses from corpus.txt
     questions = []
@@ -41,6 +44,7 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     tokens = word_tokenize(sentence)
     cleaned_tokens = [word for word in tokens if not word in stopwords.words()]  # Only add words that are not stopwords
     cleaned_tokens = token_spellchecker(cleaned_tokens)
+    token_postagging(cleaned_tokens)
     cleaned_sentence = ' '.join(cleaned_tokens)  # rejoin words into sentence format
     return cleaned_sentence
 
@@ -49,3 +53,7 @@ def token_spellchecker(tokens):
     spell = SpellChecker()
     correct_spelling = [spell.correction(word) for word in tokens]
     return correct_spelling
+
+
+def token_postagging(tokens):
+    print("Parts of Speech: ", nltk.pos_tag(tokens))
