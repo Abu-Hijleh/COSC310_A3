@@ -1,11 +1,13 @@
-  
 import Preprocessor
 import en_core_web_lg
 import random
-#Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be. 
+
+#Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be.
+
 
 def preprocess(sentence):  # Uses functions in Preprocessor.py to format sentence
-    formatted_sentence = Preprocessor.sentence_formatter(sentence)  # remove punctuation
+    normalized_sentence = Preprocessor.sentence_normalizer(sentence)
+    formatted_sentence = Preprocessor.sentence_formatter(normalized_sentence)  # remove punctuation
     lemmatized_sentence = Preprocessor.sentence_lemmatizer(formatted_sentence)  # lemmatize words
     cleaned_sentence = Preprocessor.sentence_cleaner(lemmatized_sentence)  # remove stopwords
     preprocessed_sentence = cleaned_sentence
