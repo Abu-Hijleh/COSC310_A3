@@ -21,6 +21,7 @@ def vectorizer(question):  # Turns questions into a vectorized list
 
 
 def process(sentence, doc_2, answer):  # Processes user input and outputs the correct response
+    invalid_responses = ["I do not understand the question", "That question is not in my database","I cannot answer that question","I am not familiar with that question","I am sorry. Could you please ask another question?"]
     similarity_index = 0
     index = 0
     nlp = en_core_web_lg.load()
@@ -38,4 +39,4 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
         print(answer[index])
 
     else:
-        print("I do not understand your question")
+        print(random.choice(invalid_responses))
