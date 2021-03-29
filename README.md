@@ -1,9 +1,9 @@
-# NOVABOT, THE ROBOT ASTRONOMER
+# NOVABOT, THE ROBOT ASTRONOMER AND GEOGRAPHER
 ---
 
 # Project Description
 
-Nova is a chatbot that is passionate about teaching astronomy to users. Her implementation of natural language processing in python allows her to understand and answer user questions related to stars, galaxies, black holes, planets and many other astronomical topics. She was created with the intent to spread basic knowledge about astronomy to individuals who are interested in the field. 
+Nova is a chatbot that is passionate about teaching astronomy and geography to users. Her implementation of natural language processing in python allows her to understand and answer user questions related to astronomy such as stars, galaxies, black holes and planets, and questions related to geography such as country capitals and geographical records. She was created with the intent to spread basic knowledge about astronomy and geography to individuals who are interested in these fields. 
 
 # Software Development Life Cycle
 
@@ -11,7 +11,7 @@ We chose to use the incremental development life cycle. This life cycle is ideal
 
 # How does Nova work?
 
-Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy questions are thought of. 
+Nova was developed in python and uses natural language processing to understand and converse with the user. She takes the input from the user and cleans the sentences into a condensed and easily-readable format. She then compares the input to the questions she has in her questionbank and gives a response based on the similarity between the input and questionbank questions. All the questions and responses are found inside the corpus.txt file and may be expanded or changed as more astronomy or geography questions are thought of. 
 
 # Requirements
 
@@ -38,18 +38,23 @@ You will need to download and install NLTK and Spacy in your python IDE before u
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
   - `Input: nuclear fusion`
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
-- Nova cover a wide range of topics in astronomy and astrophysics 
+  - `Input: what is the capital of Canada?'
+  - `Nova: Ottowa`
+- Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
+- Nova can recognize inputs even if they have simple spelling errors
+- `Input: what s the capitall pf jamaica?`
+- `Nova: Kingston`
+- Nova can recognize the parts of speech of words in the user input
+- `Input: what is a white dwarf?`
+- `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
+- Nova can recognize synonyms of words in the user input
+- `Input: which country has the lowest population?`
+- `Nova: Synset('state.n.04'), Synset('country.n.02'), Synset('nation.n.02'), Synset('country.n.04'), Synset('area.n.01')][Synset('last.s.09'), Synset('low.a.01'), Synset('low.a.02'), Synset('low.s.03'), Synset('low.s.04'), Synset('low.a.05'), Synset('abject.s.01'), Synset('humble.s.01'), Synset('depleted.s.01'), Synset('broken.s.03'), Synset('gloomy.s.02'), Synset('lowest.r.01')][Synset('population.n.01'), Synset('population.n.02'), Synset('population.n.03'), Synset('population.n.04'), Synset('population.n.05')]`
 
 # Limitations
 
 - Nova can take a while to process user input and output the correct responses since there is a lot of conversion and formatting to be done. The processing time could be lowered by using more efficient functions.
 - Nova is somewhat limited to the predefined questions and responses in the corpus.txt. The corpus.txt will have to be expanded to allow Nova to answer more questions.
-  - `Input: who is the president of the USA?`
+  - `Input: what is a megabyte?`
   - `Nova: I do not understand your question`
-- Nova cannot recognize inputs that have spelling errors. This can be fixed with Porter Stemmer in the next version
-  - `Input: what is a neutron star?`
-  - `Nova: It is the compact corpse of a high-mass star. It packs about the mass of the Sun into the volume just a few kilometers in radius`
-  - `Input: what is a nutron star?`
-  - `Nova: Stars are mostly made of hydrogen and helium`
-
