@@ -2,21 +2,22 @@ import Preprocessor
 import Processor
 import sys, os
 import tkinter
-from tkinter import *
+from tkinter import * #for GUI
 import nltk
 from nltk.corpus import wordnet
 
+#
+# def blockPrint():  # Remove all the printing onto console when chatbot is loading
+#     sys.stdout = open(os.devnull, 'w')
+#
+#
+# def enablePrint():  # Restores printing
+#     sys.stdout = sys.__stdout__
 
-def blockPrint():  # Remove all the printing onto console when chatbot is loading
-    sys.stdout = open(os.devnull, 'w')
-
-
-def enablePrint():  # Restores printing
-    sys.stdout = sys.__stdout__
-
-
+#this is to process our questions and responses from the corpus txt file
 questions, responses = Preprocessor.load_corpus()
 
+#Use of synonyms:
 bye_synonyms = [] #Create an array that has all synonyms of "bye". All synonyms can be used to terminate the program. 
 for syn in wordnet.synsets("bye"):
     for l in syn.lemmas():
@@ -24,11 +25,12 @@ for syn in wordnet.synsets("bye"):
 
 
 print("Booting Up...")
-blockPrint()
+#blockPrint()
 question_list = Processor.vectorizer(questions)
-enablePrint()
+#enablePrint()
 print("The Chat Bot has loaded. Type any synonym of 'bye' to exit")
 
+#GUI CODE
 window = tkinter.Tk()
 #height is false so that we do not lose the fixed bar at the bottom
 window.resizable(width=True, height=False)
@@ -45,9 +47,7 @@ messages.pack(anchor='nw', expand=1, fill=BOTH)
 def event_enter(key):
     Enter_pressed()
 
-
 def Enter_pressed():
-
     input_get = You.get()
     if input_get.lower() in bye_synonyms:
         quit()
@@ -65,7 +65,7 @@ Label(window, text=" user : ").pack(side=LEFT)
 Entry(window, textvariable=You, width=10, background="white").pack(side=LEFT, anchor='nw', expand=1, fill=BOTH)
 frame = Frame(window)
 Button(window, width=10, text="Send", foreground="Black", command=Enter_pressed, relief="flat").pack(side=LEFT)
-messages.insert(END, "Nova: " + '%s\n' % "Hello. My name is Nova, the astronomy and geography Chat Bot. Pleased to meet you.")
+messages.insert(END, "Nova: " + '%s\n' % "Hello. My name is Nova, the astronomy and geography Chat Bot. Pleased to meet you. Type any synonym of 'bye' to exit the chat when you are done")
 window.bind("<Return>", event_enter)
 frame.pack(anchor='nw', expand=1, fill=BOTH)
 window.mainloop()
