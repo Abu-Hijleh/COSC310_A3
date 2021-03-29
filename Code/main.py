@@ -17,7 +17,7 @@ def enablePrint():  # Restores printing
 
 questions, responses = Preprocessor.load_corpus()
 
-bye_synonyms = []
+bye_synonyms = [] #Create an array that has all synonyms of "bye". All synonyms can be used to terminate the program. 
 for syn in wordnet.synsets("bye"):
     for l in syn.lemmas():
         bye_synonyms.append(l.name())
@@ -27,7 +27,7 @@ print("Booting Up...")
 blockPrint()
 question_list = Processor.vectorizer(questions)
 enablePrint()
-print("The Chat Bot has loaded. Type 'goodbye' to exit")
+print("The Chat Bot has loaded. Type any synonym of 'bye' to exit")
 
 window = tkinter.Tk()
 #height is false so that we do not lose the fixed bar at the bottom
