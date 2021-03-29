@@ -1,10 +1,10 @@
+  
 import Preprocessor
 import en_core_web_lg
-
+import random
 #Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be. 
 
 def preprocess(sentence):  # Uses functions in Preprocessor.py to format sentence
-    correctspelling_sentence = Preprocessor.sentence_spellchecker(sentence) #corrects spelling
     formatted_sentence = Preprocessor.sentence_formatter(sentence)  # remove punctuation
     lemmatized_sentence = Preprocessor.sentence_lemmatizer(formatted_sentence)  # lemmatize words
     cleaned_sentence = Preprocessor.sentence_cleaner(lemmatized_sentence)  # remove stopwords
@@ -22,6 +22,7 @@ def vectorizer(question):  # Turns questions into a vectorized list
 
 
 def process(sentence, doc_2, answer):  # Processes user input and outputs the correct response
+    invalid_responses = ["I do not understand the question", "That question is not in my database","I cannot answer that question","I am not familiar with that question","I am sorry. Could you please ask another question?"]
     similarity_index = 0
     index = 0
     nlp = en_core_web_lg.load()
@@ -39,4 +40,4 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
         print(answer[index])
 
     else:
-        print("I do not understand your question")
+        print(random.choice(invalid_responses))
