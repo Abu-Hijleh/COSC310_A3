@@ -27,7 +27,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - **Corpus**: Contains a compilation of questions and responses that Nova uses to converse with the user
 - **Preprocessor**: This section is in charge of formatting the user input into a more readable format for the system
 - **Processor**: This section takes the preprocessed data and tries to match it with its accurate response
-- **Main**: This section introduces the user, take their input and manages how the program executes 
+- **Main**: This section introduces the user, takes their input, generates the GUI, and manages how the program executes 
 - **norm_punc**: This section was taken from the Phrasal library. It normalizes sentences by removing elements such as special characters, extra spaces and apostrophes. 
 
 `Corpus` --> `Preprocessor` --> `Processor` --> `Main`
@@ -40,7 +40,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
   - `Input: nuclear fusion`
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
   - `Input: what is the capital of Canada?'
-  - `Nova: Ottowa`
+  - `Nova: Ottawa`
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
@@ -64,14 +64,6 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 # New Features 
 
 - Added a GUI to make the NovaBot more user friendly. This is an improvement because the user had to previously view all the logs that were displayed on the console.
-  - `Label(window, text=" user : ").pack(side=LEFT)`
-  - `Entry(window, textvariable=You, width=10, background="white").pack(side=LEFT, anchor='nw', expand=1, fill=BOTH)`
-  - `frame = Frame(window)`
-  - `Button(window, width=10, text="Send", foreground="Black", command=Enter_pressed, relief="flat").pack(side=LEFT)`
-  - `messages.insert(END, "Nova: " + '%s\n' % "Hello. My name is Nova, the astronomy and geography Chat Bot. Pleased to meet you.")`
-  - `window.bind("<Return>", event_enter)`
-  - `frame.pack(anchor='nw', expand=1, fill=BOTH)`
-  - `window.mainloop()`
 - Added a new topic. Geography was chosen as the new topic since it seemed like the closest topic to astronomy. The addition of the new topic opens up a lot more conversations between the user and NovaBot. 
 - Added a feature that gives five different responses if NovaBot does not recognize the question. This feature makes NovaBot seem more realistic since she no longer gives the same answer to every unrecognized question
 - Added a feature to correct spelling. This was a very important addition since previously, NovaBot would fail to recognize user input even if it had simple spelling errors. Now the user will not have to worry about minor spelling errors since NovaBot will correct spelling automatically.
