@@ -47,7 +47,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
   - `Input: what s the capitall pf jamaica?`
   - `Nova: Kingston`
 - Nova can recognize user inputs even if they contain special characters 
-  -`Input: what i$ the capital of Indi@?`
+  - `Input: what i$ the capital of Indi@?`
   - `Nova: New Delhi`
 - Nova can recognize the parts of speech of words in the user input
   - `Input: what is a white dwarf?`
