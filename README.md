@@ -60,3 +60,13 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova is somewhat limited to the predefined questions and responses in the corpus.txt. The corpus.txt will have to be expanded to allow Nova to answer more questions.
   - `Input: what is a megabyte?`
   - `Nova: I do not understand your question`
+
+# New Features 
+
+- Added a GUI to make the NovaBot more user friendly. This is an improvement because the user had to previously view all the logs that were displayed on the console.
+- Added a new topic. Geography was chosen as the new topic since it seemed like the closest topic to astronomy. The addition of the new topic opens up a lot more conversations between the user and NovaBot. 
+- Added a feature that gives five different responses if NovaBot does not recognize the question. This feature makes NovaBot seem more realistic since she no longer gives the same answer to every unrecognized question
+- Added a feature to correct spelling. This was a very important addition since previously, NovaBot would fail to recognize user input even if it had simple spelling errors. Now the user will not have to worry about minor spelling errors since NovaBot will correct spelling automatically.
+- Added synonym recognition. NovaBot now will close whenever a user inputs synonyms of the word "bye". Previously, the user could only terminate the program is they typed the word "goodbye" so this addition allows them more flexibility.
+- Added POS-tagging. This feature was to be used to extract words that seemed unnecessary during the preprocessing. However, the feature was not used since the alternative NLP tools that we implemented already took care of those words.
+- Added a function from Phrasal that normalized sentences. This feature allows NovaBot to recognize user input even if it contains special characters, apostrophes or extra spaces. It is just another feature to help NovaBot recognize more user inputs.
