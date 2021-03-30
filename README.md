@@ -27,7 +27,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - **Corpus**: Contains a compilation of questions and responses that Nova uses to converse with the user
 - **Preprocessor**: This section is in charge of formatting the user input into a more readable format for the system
 - **Processor**: This section takes the preprocessed data and tries to match it with its accurate response
-- **Main**: This section introduces the user, take their input and manages how the program executes 
+- **Main**: This section introduces the user, takes their input, generates the GUI, and manages how the program executes 
 - **norm_punc**: This section was taken from the Phrasal library. It normalizes sentences by removing elements such as special characters, extra spaces and apostrophes. 
 
 `Corpus` --> `Preprocessor` --> `Processor` --> `Main`
