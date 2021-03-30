@@ -51,6 +51,7 @@ def sentence_lemmatizer(sentence):  # Changes words in the sentence to their roo
     for word in split:
         lemmatized_word_bank.append(lemmatizer.lemmatize(word))  # add lemmatized words to list
     lemmatized_sentence = ' '.join(lemmatized_word_bank)  # rejoin words into a sentence format
+    print(lemmatized_sentence)
     return lemmatized_sentence
 
 
@@ -71,3 +72,4 @@ def token_spellchecker(tokens):
 
 def token_postagging(tokens):
     print("Parts of Speech: ", nltk.pos_tag(tokens))
+    return nltk.pos_tag(tokens)

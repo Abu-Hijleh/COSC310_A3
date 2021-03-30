@@ -11,6 +11,7 @@ def preprocess(sentence):  # Uses functions in Preprocessor.py to format sentenc
     lemmatized_sentence = Preprocessor.sentence_lemmatizer(formatted_sentence)  # lemmatize words
     cleaned_sentence = Preprocessor.sentence_cleaner(lemmatized_sentence)  # remove stopwords
     preprocessed_sentence = cleaned_sentence
+    #print(preprocessed_sentence)
     return preprocessed_sentence
 
 
