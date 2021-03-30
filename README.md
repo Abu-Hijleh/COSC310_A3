@@ -40,7 +40,7 @@ You will need to download and install NLTK and Spacy in your python IDE before u
   - `Input: nuclear fusion`
   - `Nova: It is a processes by which the Sun fuses hydrogen atoms to form helium`
   - `Input: what is the capital of Canada?'
-  - `Nova: Ottowa`
+  - `Nova: Ottawa`
 - Nova cover a wide range of topics in astronomy, astrophysics and geography
 - Nova is easy to refactor and reuse since its structure is very basic. The corpus.txt can be modified to suit any topic of interest
 - Nova can recognize inputs even if they have simple spelling errors
