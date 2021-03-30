@@ -22,12 +22,13 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - `python -m spacy download en_core_web_lg`
 - `pip install pyspellchecker`
 
-# Branches
+# Sections
 
 - **Corpus**: Contains a compilation of questions and responses that Nova uses to converse with the user
 - **Preprocessor**: This section is in charge of formatting the user input into a more readable format for the system
 - **Processor**: This section takes the preprocessed data and tries to match it with its accurate response
 - **Main**: This section introduces the user, take their input and manages how the program executes 
+- **norm_punc**: This section was taken from the Phrasal library. It normalizes sentences by removing elements such as special characters, extra spaces and apostrophes. 
 
 `Corpus` --> `Preprocessor` --> `Processor` --> `Main`
 
@@ -45,12 +46,13 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 - Nova can recognize inputs even if they have simple spelling errors
   - `Input: what s the capitall pf jamaica?`
   - `Nova: Kingston`
+- Nova can recognize user inputs even if they contain special characters 
+  -`Input: what i$ the capital of Indi@?`
+  - `Nova: New Delhi`
 - Nova can recognize the parts of speech of words in the user input
   - `Input: what is a white dwarf?`
   - `Nova: Parts of Speech:  [('white', 'JJ'), ('dwarf', 'NN')]`
-- Nova can recognize synonyms of words in the user input
-  - `Input: which country has the lowest population?`
-  - `Nova: Synset('state.n.04'), Synset('country.n.02'), Synset('nation.n.02'), Synset('country.n.04'), Synset('area.n.01')][Synset('last.s.09'), Synset('low.a.01'), Synset('low.a.02'), Synset('low.s.03'), Synset('low.s.04'), Synset('low.a.05'), Synset('abject.s.01'), Synset('humble.s.01'), Synset('depleted.s.01'), Synset('broken.s.03'), Synset('gloomy.s.02'), Synset('lowest.r.01')][Synset('population.n.01'), Synset('population.n.02'), Synset('population.n.03'), Synset('population.n.04'), Synset('population.n.05')]`
+- Nova recognizes synonyms of the word "bye" and uses them to find out when the user is done asking questions
 
 # Limitations
 
