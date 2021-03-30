@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b15ecba-f0ee-4892-b19f-5ea7b2de733a" name="Default Changelist" comment="Edited GUI to make it look good">
-      <change afterPath="$PROJECT_DIR$/Code/UnitTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Processor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
       <recent name="C:\Users\Haneen\Desktop\COSC310_A3\Code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.UnitTesting">
+  <component name="RunManager" selected="Python.main">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python">
       <module name="COSC310_A3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,8 +113,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.UnitTesting" />
       <item itemvalue="Python.GUI" />
+      <item itemvalue="Python.UnitTesting" />
       <item itemvalue="Python.main" />
     </list>
   </component>
