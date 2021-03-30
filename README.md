@@ -64,6 +64,10 @@ You will need to download and install NLTK and Spacy in your python IDE before u
 # New Features 
 
 - Added a GUI to make the NovaBot more user friendly. This is an improvement because the user had to previously view all the logs that were displayed on the console.
+   -  `bye_synonyms = []
+          for syn in wordnet.synsets("bye"):
+            for l in syn.lemmas():
+                 bye_synonyms.append(l.name()) `
 - Added a new topic. Geography was chosen as the new topic since it seemed like the closest topic to astronomy. The addition of the new topic opens up a lot more conversations between the user and NovaBot. 
 - Added a feature that gives five different responses if NovaBot does not recognize the question. This feature makes NovaBot seem more realistic since she no longer gives the same answer to every unrecognized question
 - Added a feature to correct spelling. This was a very important addition since previously, NovaBot would fail to recognize user input even if it had simple spelling errors. Now the user will not have to worry about minor spelling errors since NovaBot will correct spelling automatically.
