@@ -49,16 +49,16 @@ def event_enter(key):
 def Enter_pressed():
 
     input_get = You.get()
-    if input_get.lower() in bye_synonyms:
-        quit()
-    else:
-        messages.insert(END, "You: " + '%s\n' % input_get)
-        # this gets the response from the Processor.py file and then prints them out
-        get_response = Processor.process(input_get, question_list, responses)
-        messages.insert(INSERT, "Nova: " + '%s\n' % get_response)
-        You.set('')
-        messages.see(END)
-        return "break"
+    # if input_get.lower() in bye_synonyms:
+    #     quit()
+    # else:
+    messages.insert(END, "You: " + '%s\n' % input_get)
+    # this gets the response from the Processor.py file and then prints them out
+    get_response = Processor.process(input_get, question_list, responses)
+    messages.insert(INSERT, "Nova: " + '%s\n' % get_response)
+    You.set('')
+    messages.see(END)
+    return "break"
 
 
 Label(window, text=" user : ").pack(side=LEFT)

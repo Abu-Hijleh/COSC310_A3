@@ -1,7 +1,7 @@
 import Preprocessor
 import en_core_web_lg
 import random
-
+import APIs
 
 # Takes in the user input, as formated by the Preprocessor file, and analyzes the input to determine what the best response would be.
 
@@ -31,9 +31,16 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
     similarity_index = 0
     index = 0
     nlp = en_core_web_lg.load()
-    doc_1 = nlp(preprocess(sentence))
-    similarity = 0
 
+    similarity = 0
+    langdetected = 0
+    detected = APIs.detect_language(sentence)
+    if detected != "en":
+        sentence = APIs.translating("EN", sentence)
+        langdetected = 1
+    else:
+        langdetected = 0
+    doc_1 = nlp(preprocess(sentence))
     for i in range(len(doc_2)):
         if doc_2[i].vector_norm and doc_1.vector_norm:
             similarity = doc_1.similarity(doc_2[i])
@@ -42,9 +49,15 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
             similarity_index = similarity
             index = i
     if similarity_index > 0.60:
-        return answer[index]
+        if (langdetected == 1):
+            return APIs.translating(detected, answer[index])
+        else:
+            return answer[index]
 
     else:
-        return random.choice(invalid_responses)
+        if (langdetected == 1):
+            return APIs.translating(detected, random.choice(invalid_responses))
+        else:
+            return random.choice(invalid_responses)
 
 
