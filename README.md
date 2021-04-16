@@ -17,6 +17,9 @@ Nova was developed in python and uses natural language processing to understand 
 - `pip install pyspellchecker`
 - `pip install google-cloud-translate==2.0.1`
 - `pip install beautifulsoup4`
+- Unfortunately, providing my own API key json file would be a security risk, as I would be uploading it onto a public github repository. Therefore, in order to run this code, a new .json needs to be generated and the absolute reference needs to be replaced accordingly. 
+The lines that need to be edited are lines 31 and 43 in APIs.py
+
 
 
 # Files
@@ -29,7 +32,7 @@ Nova was developed in python and uses natural language processing to understand 
 - **APIs**: This file includes the Wikipedia and Google Translate APIs that were added as part of individual assigment submission. 
 
 # New Features
--Google Translate:Accepts and replies to questions in languages other than english in order to make information more accessable. 
+- Google Translate:Accepts and replies to questions in languages other than english in order to make information more accessable. 
 - Wikipedia API: If the user asks a question in english that Nova does not recognize, the question is sent to the method that uses the wikepedia API in order to attempt to generate a response. 
 # Capabilities
 
