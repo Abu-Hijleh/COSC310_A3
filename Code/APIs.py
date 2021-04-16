@@ -1,6 +1,29 @@
 from google.cloud import translate_v2 as trans
+import requests
+from bs4 import BeautifulSoup
 
+#Wikipedia API:
+def Wiki(sentence):
+    Sesh = requests.Session()
+    URL = "https://en.wikipedia.org/w/api.php"
 
+    PARAMETERS = {
+    "action": "query",
+    "format": "json",
+    "list": "search",
+    "srsearch": sentence
+    }
+    Data = Sesh.get(url=URL, params=PARAMETERS).json()
+    snip = BeautifulSoup(Data['query']['search'][0]['snippet'], 'html.parser')
+    title = BeautifulSoup(Data['query']['search'][0]['title'], 'html.parser')
+    snip = snip.getText()
+    title =title.getText()
+    urltitle = title.replace(" ", "_")
+    URL = "https://en.wikipedia.org/wiki/"+urltitle
+    Response=("I was not able to answer your question. However, I did search wikipedia and I found the following page: \n\nTitle: " +title + "\n\nSome information: "+ snip + "\n\nYou can read more about \"" + title +"\" at the following link: \n" + URL)
+    return Response
+
+#Google translate API
 def translating(lang, input):
     import six
     print(input)

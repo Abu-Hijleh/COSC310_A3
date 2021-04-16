@@ -58,6 +58,6 @@ def process(sentence, doc_2, answer):  # Processes user input and outputs the co
         if (langdetected == 1):
             return APIs.translating(detected, random.choice(invalid_responses))
         else:
-            return random.choice(invalid_responses)
+            return APIs.Wiki(sentence)
 
 

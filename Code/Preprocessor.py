@@ -61,6 +61,7 @@ def sentence_cleaner(sentence):  # Removes stop words such as 'the', 'a' and 'in
     cleaned_tokens = token_spellchecker(cleaned_tokens)
     token_postagging(cleaned_tokens)
     cleaned_sentence = ' '.join(cleaned_tokens)  # rejoin words into sentence format
+    print(cleaned_sentence)
     return cleaned_sentence
 
 #spell checking application to correct minor errors
