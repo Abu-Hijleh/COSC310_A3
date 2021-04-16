@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b15ecba-f0ee-4892-b19f-5ea7b2de733a" name="Default Changelist" comment="Edited GUI to make it look good">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/APIs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/APIs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A3 Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Flow Level 0.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Flow Level 1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,9 +139,9 @@
     </configuration>
     <list>
       <item itemvalue="Python.GUI" />
+      <item itemvalue="Python.Main" />
       <item itemvalue="Python.UnitTesting" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.Main" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
